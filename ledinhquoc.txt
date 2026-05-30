@@ -1,0 +1,359 @@
+
+BỘ CÔNG THƯƠNG
+ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI
+---------------------------
+
+
+ĐỒ ÁN TỐT NGHIỆP
+NGÀNH KHOA HỌC MÁY TÍNH 
+
+TÊN ĐỀ TÀI 
+XÂY DỰNG WEBSITE BÁN Ô TÔ TRỰC TUYẾN DÀNH CHO SHOWROOM TQ AUTO
+GVHD:            TS. Phạm Văn Hiệp
+                                  Sinh viên:         Lê Đình Quốc
+                                  Mã sinh viên:    2022603416
+
+
+
+Hà Nội – Năm 2026
+MỤC LỤC
+DANH MỤC CÁC TỪ VIẾT TẮT
+DANH MỤC BẢNG BIỂU
+DANH MỤC HÌNH ẢNH
+
+MỞ ĐẦU
+1. Lý do chọn đề tài
+Trong bối cảnh cuộc Cách mạng công nghiệp 4.0 và quá trình chuyển đổi số đang diễn ra mạnh mẽ, công nghệ thông tin ngày càng đóng vai trò quan trọng trong mọi lĩnh vực của đời sống xã hội. Đặc biệt, lĩnh vực thương mại điện tử đã và đang tạo ra những thay đổi lớn trong cách thức kinh doanh truyền thống, giúp doanh nghiệp tiếp cận khách hàng nhanh hơn, tiết kiệm chi phí vận hành và nâng cao hiệu quả quản lý.
+Ngành kinh doanh ô tô hiện nay cũng không nằm ngoài xu thế đó. Nhu cầu tìm kiếm, tham khảo thông tin và mua bán ô tô qua môi trường trực tuyến ngày càng gia tăng. Khách hàng có xu hướng tìm hiểu kỹ về sản phẩm, giá cả, thông số kỹ thuật, tình trạng xe cũng như các chính sách hỗ trợ trước khi đưa ra quyết định mua hàng. Tuy nhiên, nhiều showroom ô tô hiện nay vẫn chủ yếu hoạt động theo hình thức truyền thống, phụ thuộc vào việc tư vấn trực tiếp hoặc quảng bá qua mạng xã hội, dẫn đến hạn chế trong việc quản lý dữ liệu, chăm sóc khách hàng và mở rộng thị trường.
+Đối với showroom TQ Auto, việc xây dựng một website bán ô tô trực tuyến là giải pháp cần thiết nhằm hiện đại hóa quy trình kinh doanh, nâng cao hình ảnh thương hiệu và tăng khả năng cạnh tranh trên thị trường. Website không chỉ là nơi giới thiệu sản phẩm mà còn hỗ trợ khách hàng tra cứu thông tin xe, tìm kiếm xe phù hợp, đặt lịch xem xe và liên hệ tư vấn một cách thuận tiện.
+Xuất phát từ nhu cầu thực tiễn đó, em quyết định lựa chọn đề tài:
+“Xây dựng website bán ô tô trực tuyến cho showroom TQ Auto”
+2. Mục tiêu của đề tài
+Xây dựng website bán ô tô trực tuyến dành cho showroom TQ Auto.
+Thiết kế giao diện thân thiện, dễ sử dụng và phù hợp với người dùng.
+Xây dựng các chức năng quản lý xe, khách hàng, lịch hẹn và thông tin hệ thống.
+Hỗ trợ khách hàng tìm kiếm xe nhanh chóng, xem chi tiết sản phẩm và đặt lịch xem xe trực tuyến.
+Ứng dụng các công nghệ hiện đại trong phát triển website nhằm đảm bảo hiệu năng, khả năng mở rộng và bảo mật hệ thống.
+
+3. Đối tượng và phạm vi nghiên cứu
+3.1. Đối tượng nghiên cứu
+Hệ thống website bán ô tô trực tuyến phục vụ hoạt động kinh doanh của showroom.
+Quy trình quản lý xe, danh mục sản phẩm, khách hàng và lịch hẹn tại showroom TQ Auto.
+Người sử dụng hệ thống gồm khách hàng, nhân viên và quản trị viên.
+3.2. Phạm vi nghiên cứu
+Xây dựng website giới thiệu và bán ô tô trực tuyến.
+Phát triển các chức năng chính như:
+Hiển thị danh sách xe.
+Tìm kiếm và lọc xe theo nhu cầu.
+Xem thông tin chi tiết xe.
+Đặt lịch xem xe / liên hệ tư vấn.
+Quản lý xe, khách hàng và lịch hẹn.
+Ứng dụng công nghệ web hiện đại để xây dựng hệ thống.
+Không triển khai các hệ thống quy mô lớn hoặc các chức năng AI phức tạp.
+4. Ý nghĩa khoa học và thực tiễn
+4.1. Ý nghĩa khoa học
+Vận dụng kiến thức đã học về lập trình web, cơ sở dữ liệu, phân tích thiết kế hệ thống và phát triển phần mềm.
+Nghiên cứu mô hình xây dựng website thương mại điện tử trong lĩnh vực kinh doanh ô tô.
+Tạo nền tảng để mở rộng nghiên cứu các hệ thống quản lý bán hàng trực tuyến trong tương lai.
+4.2. Ý nghĩa thực tiễn
+Giúp showroom TQ Auto số hóa hoạt động kinh doanh và quản lý dữ liệu hiệu quả hơn.
+Mở rộng khả năng tiếp cận khách hàng thông qua môi trường internet.
+Nâng cao trải nghiệm người dùng khi khách hàng có thể xem xe, tra cứu thông tin và đặt lịch trực tuyến mọi lúc, mọi nơi.
+Góp phần tăng doanh thu, giảm chi phí vận hành và nâng cao năng lực cạnh tranh cho showroom.
+
+CHƯƠNG 1: GIỚI THIỆU TỔNG QUAN
+1.1. Giới thiệu chung về thương mại điện tử và showroom ô tô
+1.1.1. Tổng quan về thương mại điện tử
+Thương mại điện tử là hình thức kinh doanh trực tuyến cho phép các giao dịch mua bán, trao đổi hàng hóa, dịch vụ cũng như chuyển giao thông tin, tài chính được thực hiện thông qua các phương tiện điện tử và hệ thống mạng Internet toàn cầu. Trong bối cảnh nền kinh tế thế giới đang chịu sự tác động mạnh mẽ và sâu sắc từ cuộc Cách mạng Công nghiệp lần thứ tư, thương mại điện tử không còn dừng lại ở một phương thức bán hàng phụ trợ, mà đã vươn lên trở thành một thành phần cốt lõi, định hình lại toàn bộ cấu trúc vận hành của chuỗi cung ứng và hành vi tiêu dùng toàn cầu. 
+Đối với ngành công nghiệp ô tô – một ngành hàng đặc thù vốn gắn liền với những sản phẩm có giá trị kinh tế rất lớn, cấu tạo kỹ thuật phức tạp và quy trình đưa ra quyết định mua sắm kéo dài – thương mại điện tử đã tạo ra một cuộc cách mạng về mô hình tiếp cận. Khách hàng hiện đại không còn bắt đầu hành trình mua xe bằng việc đi tới từng đại lý vật lý để tham quan như trước. Thay vào đó, họ thiết lập một quy trình nghiên cứu chủ động trên không gian mạng, nơi họ thực hiện các hoạt động như tìm kiếm thông số, sàng lọc phân khúc, so sánh biểu phí lăn bánh, đọc các bài đánh giá từ chuyên gia và tham khảo phản hồi từ cộng đồng người dùng trước đó. Chính vì vậy, việc xây dựng một nền tảng thương mại điện tử đối với các doanh nghiệp kinh doanh ô tô không đơn thuần là xây dựng một trang tin tức quảng cáo trực tuyến, mà là thiết lập một hệ sinh thái tương tác thông minh, tối ưu hóa điểm chạm đầu tiên để chuyển đổi khách hàng tiềm năng và xây dựng lòng tin vững chắc ngay từ môi trường số.
+Khi đi sâu vào phân tích việc ứng dụng thương mại điện tử trong lĩnh vực kinh doanh ô tô, chúng ta có thể nhận thấy những thuận lợi và cơ hội phát triển vô cùng to lớn mà mô hình này mang lại cho doanh nghiệp. Thuận lợi đầu tiên và hiển nhiên nhất chính là khả năng xóa bỏ hoàn toàn các rào cản về mặt không gian địa lý và thời gian. Một showroom trực tuyến cho phép khách hàng tiếp cận kho xe, tra cứu thông tin và gửi yêu cầu tư vấn liên tục hai mươi tư giờ trong ngày và bảy ngày trong tuần từ bất kỳ nơi đâu, giúp doanh nghiệp mở rộng tệp khách hàng mục tiêu vượt ra khỏi ranh giới địa phương của một cửa hàng vật lý truyền thống. 
+Bên cạnh đó, giải pháp này mang lại khả năng tối ưu hóa chi phí vận hành một cách vượt trội. Doanh nghiệp có thể cắt giảm phần lớn các khoản chi phí khổng lồ dành cho việc in ấn các ấn phẩm quảng cáo, catalogue bằng giấy hay tờ rơi, đồng thời giảm tải áp lực cho đội ngũ nhân sự trực chiến tại showroom ở giai đoạn tiếp nhận thông tin ban đầu nhờ vào các bộ lọc dữ liệu tự động. Đặc biệt, việc lưu trữ thông tin tập trung trên nền tảng số là chìa khóa vàng để doanh nghiệp thu thập, phân tích hành vi và thị hiếu của người tiêu dùng, từ đó đưa ra các chiến lược tiếp thị cá nhân hóa với độ chính xác cao. Tính minh bạch về giá cả, tình trạng pháp lý và thông số kỹ thuật được hiển thị rõ ràng trên website chính là cơ sở cốt lõi để loại bỏ tâm lý e dè của người mua, khẳng định uy tín và nâng cao năng lực cạnh tranh cho doanh nghiệp trên thị trường. 
+Tuy nhiên, song hành cùng những cơ hội bứt phá, việc triển khai thương mại điện tử trong ngành hàng giá trị cao như ô tô cũng đặt ra những khó khăn và thách thức mang tính vĩ mô mà đội ngũ phát triển hệ thống bắt buộc phải giải quyết. Thách thức lớn nhất và khó vượt qua nhất chính là rào cản về mặt tâm lý và lòng tin của người tiêu dùng. Ô tô không chỉ là một phương tiện di chuyển mà còn là một tài sản có giá trị tích lũy lớn, do đó, khách hàng luôn có xu hướng cẩn trọng tối đa, mong muốn được trực tiếp quan sát, chạm vào bề mặt chất liệu, kiểm tra từng chi tiết cơ khí và trải nghiệm cảm giác lái thực tế trước khi xuống tiền. Việc truyền tải một cách trọn vẹn, chân thực và sinh động toàn bộ thẩm mỹ cũng như tình trạng kỹ thuật của chiếc xe qua màn hình thiết bị điện tử là một bài toán hóc búa, đòi hỏi giao diện phải được thiết kế cực kỳ trực quan, chuyên nghiệp và có tính tương tác cao.
+Thêm vào đó, môi trường Internet phẳng cũng đẩy áp lực cạnh tranh lên mức độ gay gắt hơn bao giờ hết, khi người mua có khả năng so sánh giá cả và chính sách hậu mãi của nhiều showroom khác nhau chỉ bằng một vài thao tác nhấp chuột, buộc doanh nghiệp phải liên tục tối ưu hóa biên độ lợi nhuận và chất lượng dịch vụ. Cuối cùng, các vấn đề an ninh mạng, nguy cơ rò rỉ dữ liệu thông tin cá nhân, số điện thoại hoặc lịch sử giao dịch của khách hàng đòi hỏi hệ thống phải sở hữu một kiến trúc bảo mật vững chắc, tuân thủ các tiêu chuẩn kỹ thuật nghiêm ngặt để chống lại các cuộc tấn công từ bên ngoài.
+1.1.2. Giới thiệu về showroom TQ Auto
+TQ Auto là showroom kinh doanh ô tô định hướng cung cấp nhiều dòng xe thuộc các thương hiệu phổ biến như Toyota, Honda, Hyundai, Kia, Mazda, Ford và một số hãng xe khác theo nhu cầu thị trường. Hoạt động chính của showroom bao gồm giới thiệu xe, tư vấn lựa chọn xe, hỗ trợ thủ tục mua bán, tiếp nhận lịch xem xe, chăm sóc khách hàng và quản lý danh sách xe đang kinh doanh.
+Trong quá trình vận hành, showroom cần thường xuyên cập nhật thông tin về xe mới, xe đã bán, mức giá, tình trạng xe, hình ảnh và các chương trình hỗ trợ. Nếu các thông tin này được đăng tải rời rạc trên mạng xã hội hoặc quản lý bằng phương pháp thủ công, nhân viên sẽ khó kiểm soát dữ liệu và khách hàng cũng khó tìm kiếm thông tin một cách hệ thống. Vì vậy, việc xây dựng website riêng cho TQ Auto là cần thiết nhằm tạo một kênh thông tin chính thức, chuyên nghiệp và ổn định.
+Website của TQ Auto được định hướng như một showroom trực tuyến. Khách hàng có thể truy cập để xem xe mọi lúc, lọc xe theo nhu cầu, đọc thông tin chi tiết, xem hình ảnh và gửi lịch hẹn xem xe. Về phía showroom, hệ thống hỗ trợ quản trị viên quản lý danh mục xe, thông tin khách hàng, lịch hẹn và các số liệu thống kê cơ bản. Đây là nền tảng quan trọng để TQ Auto từng bước hiện đại hóa quy trình kinh doanh, nâng cao hình ảnh thương hiệu và tăng khả năng cạnh tranh.
+1.2. Nghiên cứu hiện trạng và giải quyết vấn đề
+1.2.1. Hiện trạng thực tế
+Qua quá trình khảo sát thực tế chuyên sâu và phân tích toàn diện các quy trình nghiệp vụ hàng ngày tại showroom TQ Auto, hệ thống quản lý và vận hành hiện tại đang bộc lộ những lỗ hổng và hạn chế mang tính hệ thống cần phải được cải tổ một cách triệt để nhằm đáp ứng xu thế thị trường. Hiện nay, toàn bộ hoạt động tiếp cận khách hàng và phát sinh giao dịch tại showroom vẫn đang vận hành theo mô hình offline truyền thống. Nguồn khách hàng của showroom phụ thuộc rất lớn vào lượng khách vãng lai sống tại khu vực lân cận vô tình đi ngang qua cửa hàng hoặc thông qua sự giới thiệu mang tính cá nhân của những khách hàng cũ. Mặc dù showroom đã có những cố gắng nhất định trong việc tiếp cận công nghệ bằng cách đăng tải hình ảnh xe lên các hội nhóm mạng xã hội, nhưng các hoạt động này hoàn toàn mang tính tự phát, rời rạc, thiếu sự đồng bộ về mặt nhận diện và không có một địa chỉ trực tuyến chính thống để khách hàng neo giữ niềm tin và tra cứu thông tin một cách có hệ thống. 
+Hạn chế nghiêm trọng và cấp bách nhất hiện nay nằm ở khâu quản lý dữ liệu nội bộ và điều phối thông tin giữa các bộ phận tại TQ Auto. Toàn bộ cơ sở dữ liệu về số lượng xe hiện có trong kho, tình trạng kỹ thuật chi tiết của từng chiếc xe, hồ sơ thông tin cá nhân của khách hàng cũng như việc sắp xếp lịch hẹn xem xe, lái thử đều đang được thực hiện thông qua các phương pháp thủ công như ghi chép vào sổ sách vật lý hoặc nhập liệu trên các tệp Excel độc lập lưu cục bộ tại máy tính của từng nhân viên kinh doanh. 
+Mô hình quản lý phân tán và thủ công này hệ lụy tới việc tra cứu thông tin mất rất nhiều thời gian, thường xuyên xảy ra tình trạng bất đồng bộ dữ liệu khi hai nhân viên cùng tư vấn một chiếc xe đã bán, hoặc bỏ sót các lịch hẹn quan trọng của khách hàng do không có hệ thống nhắc nhở tự động. Đối với người tiêu dùng, việc thiếu vắng một website khiến họ hoàn toàn bị động, không thể chủ động tìm hiểu trước kho xe của showroom, không thể sàng lọc mẫu xe theo tiêu chí ngân sách hay thương hiệu một cách nhanh chóng, từ đó làm giảm sút đáng kể trải nghiệm mua sắm và sự hài lòng ban đầu đối với TQ Auto. 
+1.2.2. Cơ cấu tổ chức và hoạt động của các bộ phận
+Để đảm bảo cho guồng quay vận hành hàng ngày diễn ra một cách trôi chảy, cơ cấu tổ chức nhân sự tại Showroom TQ Auto được thiết lập theo mô hình phân tầng chức năng với ba bộ phận cốt lõi, hoạt động độc lập về mặt chuyên môn nhưng sở hữu mối quan hệ phối hợp hữu cơ chặt chẽ: 
+Bộ phận Kinh doanh được xem là tuyến đầu trực tiếp tạo ra nguồn thu và dòng tiền cho toàn bộ showroom. Nhiệm vụ của các nhân sự thuộc bộ phận này bao gồm việc chủ động đón tiếp khách hàng khi họ đến showroom, lắng nghe tâm tư và nhu cầu thực tế để đưa ra các giải pháp tư vấn dòng xe phù hợp với khả năng tài chính. Đồng thời, họ chịu trách nhiệm đàm phán các điều khoản thương mại, hướng dẫn khách hàng hoàn thiện hồ sơ vay vốn trả góp ngân hàng và thực hiện ký kết các hợp đồng mua bán xe theo đúng quy trình pháp lý. 
+Bộ phận Kỹ thuật đóng vai trò như chốt chặn kiểm soát chất lượng, chịu trách nhiệm toàn bộ về mặt trạng thái cơ khí và an toàn của các sản phẩm ô tô được phân phối bởi TQ Auto. Nhân viên kỹ thuật sẽ thực hiện quy trình kiểm định nghiêm ngặt các hạng mục máy móc, hệ thống điện, thân vỏ đối với xe đầu vào, thực hiện các công tác bảo dưỡng, sửa chữa định kỳ, chuẩn bị thẩm mỹ xe trước khi đưa lên sàn trưng bày và trực tiếp hỗ trợ giải thích các thông số chuyên sâu hoặc đồng hành cùng khách hàng trong các buổi lái thử xe trực tiếp. 
+Bộ phận Chăm sóc khách hàng (CSKH) chịu trách nhiệm xây dựng, duy trì và củng cố mối quan hệ bền vững giữa khách hàng và thương hiệu sau khi chu trình bán hàng kết thúc. Bộ phận này thực hiện các cuộc gọi khảo sát mức độ hài lòng, tiếp nhận và điều phối giải quyết các khiếu nại phát sinh, nhắc nhở lịch bảo dưỡng định kỳ và quản lý các chương trình tri ân, giúp nâng cao chỉ số giữ chân khách hàng và tạo dựng uy tín truyền thông lâu dài cho showroom. 
+1.2.3. Yêu cầu đối với hệ thống mới
+Nhằm khắc phục triệt để những điểm nghẽn của hiện trạng thủ công và tối ưu hóa hiệu suất phối hợp tác nghiệp giữa ba bộ phận chức năng nêu trên, hệ thống website bán ô tô trực tuyến mới của TQ Auto bắt buộc phải đáp ứng một cách toàn diện các yêu cầu chức năng và phi chức năng được chuẩn hóa như sau:
+Về phía khách hàng (Giao diện người dùng công khai), hệ thống phải cung cấp một công cụ tìm kiếm và bộ lọc thông minh đạt hiệu suất cao, cho phép người dùng thực hiện sàng lọc kho xe dựa trên các tiêu chí kết hợp như hãng sản xuất, khoảng giá mong muốn, kiểu dáng thân xe, năm sản xuất và tình trạng xe mới hoặc xe lướt. Đồng thời, tính năng đặt lịch hẹn xem xe và đăng ký lái thử trực tuyến phải được tối ưu hóa tối đa về mặt trải nghiệm người dùng, cho phép khách hàng điền thông tin nhanh chóng và chủ động chọn ngày giờ mong muốn đến showroom, giúp loại bỏ hoàn toàn thời gian chờ đợi. 
+Về phía quản lý nội bộ (Phân hệ Dashboard dành cho Admin và Nhân viên), hệ thống cần phải số hóa và tập trung hóa toàn bộ dòng chảy dữ liệu. Phân hệ quản trị phải cung cấp các biểu mẫu trực quan để cập nhật, chỉnh sửa thông tin thông số kỹ thuật và bộ sưu tập hình ảnh của xe theo thời gian thực. Dữ liệu lịch hẹn từ website gửi về phải được tự động phân loại, lưu trữ và gửi thông báo đến nhân viên phụ trách để kịp thời liên hệ xác nhận. Cuối cùng, một yêu cầu then chốt đối với hệ thống mới là phải tích hợp mô-đun báo cáo và thống kê tự động. Mô-đun này sẽ tự động tổng hợp dữ liệu, trích xuất các biểu đồ trực quan về lượng truy cập, các mẫu xe được quan tâm nhiều nhất trong tháng và biểu đồ tăng trưởng lịch hẹn, giúp ban quản lý showroom có được cái nhìn toàn cảnh để đưa ra các quyết định điều chỉnh chiến lược kinh doanh và nhập hàng một cách khoa học. 
+1.3. Công nghệ sử dụng trong dự án
+1.3.1. Frontend: Next.js và Tailwind CSS
+Trong kiến trúc tổng thể của hệ thống website bán ô tô trực tuyến TQ Auto, phân hệ giao diện người dùng (Frontend) đóng vai trò là điểm chạm trực quan đầu tiên và quyết định phần lớn đến tỷ lệ chuyển đổi hành vi của khách hàng. Nhằm tối ưu hóa hiệu suất hiển thị, mang lại trải nghiệm mượt mà và đảm bảo các tiêu chuẩn khắt khe về tối ưu hóa công cụ tìm kiếm, đồ án đề xuất lựa chọn framework Next.js làm nền tảng phát triển cốt lõi, kết hợp cùng thư viện Tailwind CSS để tổ chức cấu trúc mã nguồn giao diện đáp ứng (Responsive UI).
+Next.js là một framework JavaScript mã nguồn mở đầy mạnh mẽ được xây dựng trên nền tảng thư viện React, do công ty Vercel (tiền thân là Zeit) khởi xướng và phát hành phiên bản đầu tiên vào ngày 25 tháng 10 năm 2016. Sự ra đời của Next.js xuất phát từ một nhu cầu cấp bách của cộng đồng lập trình bấy giờ: giải quyết triệt để những điểm nghẽn cố hữu của cơ chế Render phía Client (Client-Side Rendering - CSR) vốn là đặc trưng của các ứng dụng Single Page Application (SPA) xây dựng bằng React thuần. Các ứng dụng CSR gửi một file HTML rỗng cùng một khối lượng mã JavaScript khổng lồ về trình duyệt, buộc thiết bị của người dùng phải tự biên dịch và đổ dữ liệu. Điều này dẫn đến hai hệ lụy nghiêm trọng: tốc độ hiển thị trang đầu tiên (First Contentful Paint) bị chậm và các robot cào dữ liệu của các công cụ tìm kiếm như Google, Bing không thể đọc được nội dung trang web, khiến điểm SEO bị sụt giảm nghiêm trọng. Phiên bản Next.js 1.0 đến 4.0 (giai đoạn 2016 - 2017) đã đặt những viên gạch đầu tiên cho giải pháp Render phía Máy chủ (Server-Side Rendering - SSR) một cách đơn giản thông qua hàm cấu hình getInitialProps.
+Bước sang giai đoạn 2019 - 2020, Vercel tung ra phiên bản Next.js 9 và 10, đánh dấu một bước chuyển mình quan trọng khi giới thiệu khái niệm Biên dịch Tĩnh (Static Site Generation - SSG) và cơ chế Tái tạo Tĩnh Lũy tiến (Incremental Static Regeneration - ISR) thông qua hai hàm toán học cốt lõi là getStaticProps và getStaticPaths. Sự cải tiến này cho phép các trang thông tin sản phẩm ít biến động được biên dịch sẵn thành file HTML tĩnh ngay trong quá trình Build dự án, giúp website đạt tốc độ tải trang gần như ngay lập tức khi có yêu cầu từ người dùng.
+Tuy nhiên, cuộc đại cải tổ mang tính cách mạng và định hình lại toàn bộ hệ sinh thái Next.js chính là sự ra mắt của phiên bản Next.js 13 vào tháng 10 năm 2022. Ở phiên bản này, Next.js chính thức giới thiệu kiến trúc "App Router" chạy song song với "Pages Router" truyền thống, hoạt động dựa trên nền tảng React Server Components (RSC). Thay vì gửi toàn bộ mã nguồn của các component về trình duyệt để render, React Server Components cho phép thực thi và tính toán các logic phức tạp trực tiếp trên máy chủ, chỉ trả về cấu trúc dữ liệu HTML và JSON tối giản cho client. Điều này giúp giảm thiểu tới 50% dung lượng file JavaScript cần tải xuống, tối ưu hóa bộ nhớ đệm (Caching) và tăng tốc độ phản hồi giao diện lên một tầm cao mới. Các thế hệ tiếp theo gồm Next.js 14 (cuối năm 2023) và Next.js 15 (phát hành giai đoạn 2024 - 2025) tiếp tục hoàn thiện cơ chế Server Actions – cho phép lập trình viên viết các hàm tương tác trực tiếp với cơ sở dữ liệu ngay trong file giao diện mà không cần thiết lập thủ công các API Route trung gian, đồng thời thay thế trình biên dịch mã nguồn Babel/Webpack cũ bằng Turbopack viết bằng ngôn ngữ Rust, giúp tốc độ Hot Reload khi lập trình nhanh hơn gấp nhiều lần.
+Lý do học thuật cốt lõi để quyết định ứng dụng Next.js vào dự án TQ Auto xuất phát từ tính chất đặc thù của một website kinh doanh ô tô thương mại điện tử. Đối với ngành hàng này, việc các bài viết giới thiệu mẫu xe mới hay các trang danh mục sản phẩm đạt thứ hạng cao trên Google khi khách hàng gõ từ khóa tìm kiếm (ví dụ: "Mua xe Toyota Camry trả góp", "Showroom ô tô TQ Auto") là yếu tố sống còn quyết định nguồn doanh thu. Cơ chế SSR của Next.js đảm bảo rằng khi robot của Google truy cập vào đường dẫn website, hệ thống sẽ trả về ngay lập tức một file HTML chứa đầy đủ nội dung văn bản, từ khóa và thẻ meta dữ liệu đã được xử lý hoàn chỉnh trên server, giúp quá trình lập chỉ mục (Indexing) diễn ra hoàn hảo. Đồng thời, tính năng ISR của Next.js cho phép cập nhật thông tin về giá xe hoặc trạng thái xe (Xe mới/Đã bán) một cách tự động ngầm dưới nền mà không cần phải build lại toàn bộ mã nguồn của hệ thống, cân bằng tuyệt đối giữa tốc độ tải trang cực hạn của trang tĩnh và tính cập nhật liên tục của trang động.
+Để bổ trợ cho sức mạnh kiến trúc của Next.js, dự án tích hợp Tailwind CSS – một framework CSS hướng tiện ích (Utility-first CSS framework) được sáng tạo bởi Adam Wathan và ra mắt phiên bản đầu tiên vào tháng 11 năm 2017. Trải qua các phiên bản từ Tailwind v1, v2 đến các thế hệ v3 và v4 hiện đại, framework này đã thay đổi hoàn toàn tư duy thiết kế giao diện web truyền thống. Thay vì bắt lập trình viên phải viết các file CSS độc lập với hàng trăm dòng mã và đối mặt với nguy cơ xung đột đặt tên class theo chuẩn BEM, Tailwind cung cấp một hệ thống hàng ngàn các class tiện ích nguyên tử (ví dụ: flex, pt-4, text-center, bg-red-600) được tối ưu hóa sâu sắc.
+Sự xuất hiện của công cụ biên dịch Just-In-Time (JIT) trong các phiên bản Tailwind mới cho phép hệ thống quét toàn bộ mã nguồn và chỉ biên dịch ra file CSS chứa đúng những class thực sự được sử dụng trong dự án, giúp dung lượng file stylesheet thành phẩm vô cùng nhỏ gọn (thường dưới 10KB). Đối với website TQ Auto, Tailwind CSS cho phép xây dựng một hệ thống ngôn ngữ thiết kế đồng bộ (Design System), dễ dàng cấu hình các thông số về bảng màu cao cấp, khoảng cách, font chữ và xử lý giao diện đáp ứng (Responsive) mượt mà trên mọi loại kích thước màn hình từ điện thoại di động, máy tính bảng đến máy tính để bàn thông qua các tiền tố đơn giản như md:, lg:, xl:.
+1.3.2. Backend: Node.js (Express.js / NestJS)
+Đối với phân hệ máy chủ (Backend), nơi chịu trách nhiệm thực thi các logic nghiệp vụ phức tạp, điều phối luồng dữ liệu, quản lý phiên đăng nhập và thiết lập các rào cản bảo mật, hệ thống ứng dụng môi trường runtime Node.js làm nền tảng thực thi chính, kết hợp với các framework xây dựng kiến trúc API chuyên dụng là Express.js hoặc NestJS.
+Node.js không phải là một ngôn ngữ lập trình độc lập và cũng không phải là một framework, mà là một môi trường chạy mã nguồn JavaScript ngoài trình duyệt (Cross-platform JavaScript runtime environment). Node.js được phát triển bởi kỹ sư phần mềm Ryan Dahl và chính thức ra mắt vào năm 2009, chạy trên nền bộ bộ dịch mã V8 Engine – công cụ lõi được Google phát triển để biên dịch mã JavaScript trực tiếp thành mã máy mã nguồn gốc có tốc độ thực thi siêu tốc trên trình duyệt Chrome. Trước khi Node.js xuất hiện, thế giới công nghệ phần mềm bị chia cắt bởi một ranh giới rõ ràng: JavaScript chỉ có thể chạy trên client để xử lý hiệu ứng giao diện, còn tầng server bắt buộc phải sử dụng các ngôn ngữ như PHP, Java, C# hay Python. Node.js ra đời đã tạo nên một cuộc cách mạng lớn, hiện thực hóa mô hình "JavaScript Everywhere", cho phép cộng đồng công nghệ sử dụng một ngôn ngữ duy nhất xuyên suốt từ giao diện hiển thị cho đến tầng quản trị cơ sở dữ liệu sâu nhất.
+Tiến trình lịch sử của Node.js ghi nhận nhiều giai đoạn thăng trầm mang tính bước ngoặt. Vào năm 2014, do những bất đồng về tiến độ quản lý và định hướng phát triển của công ty chủ quản Joyent, một nhóm các nhà phát triển cốt lõi đã tách ra để thành lập dự án io.js. Sự chia tách này đã vô tình thúc đẩy tốc độ nâng cấp các tính năng hiện đại của ngôn ngữ ES6 một cách chóng mặt. Nhận thấy sự phân rã này gây tổn hại đến hệ sinh thái chung, vào năm 2015, hai dự án đã chính thức sáp nhập trở lại dưới sự bảo trợ của Quỹ Node.js (Node.js Foundation). Từ thời điểm này, Node.js thiết lập cơ chế phát hành phiên bản vô cùng khoa học với các bản LTS (Long Term Support) có chu kỳ hỗ trợ dài hạn lên đến 3 năm. Các phiên bản Node.js 18 LTS (năm 2022), Node.js 20 LTS (năm 2023) và các thế hệ mới hơn sau này đã mang lại những cải tiến sâu sắc về mặt hiệu năng xử lý, tích hợp cơ chế bảo mật nghiêm ngặt đối với quyền truy cập file hệ thống, hỗ trợ sẵn module Fetch API mà không cần thư viện bên thứ ba và tối ưu hóa công cụ quản lý luồng dữ liệu lớn (Stream API).
+Để xây dựng một cấu trúc máy chủ hoàn chỉnh trên nền Node.js, đồ án có thể lựa chọn một trong hai hướng tiếp cận framework tiêu chuẩn tùy thuộc vào quy mô cấu trúc mã nguồn:
+Express.js: Được phát hành lần đầu tiên vào năm 2010 bởi TJ Holowaychuk, Express.js là một framework tối giản (minimalist) và linh hoạt bậc nhất trong hệ sinh thái Node.js. Nó không ép buộc lập trình viên phải tuân theo bất kỳ một cấu trúc thư mục cố định nào mà chỉ cung cấp một tầng tính năng mỏng để xử lý định tuyến (Routing), quản lý các giao thức HTTP và thiết lập các phần mềm trung gian (Middleware) để kiểm soát luồng dữ liệu trước khi đến Controller. Tính tối giản của Express.js giúp tốc độ thực thi của máy chủ đạt mức tối đa và cực kỳ dễ tiếp cận đối với các dự án vừa và nhỏ.
+NestJS: Được sáng tạo vào năm 2017 bởi Kamil Myśliwiec, NestJS là một bước nhảy vọt về mặt kiến trúc phần mềm Backend cho Node.js. Trái ngược hoàn toàn với triết lý tự do của Express, NestJS áp dụng nghiêm ngặt ngôn ngữ TypeScript và xây dựng một bộ khung kiến trúc phân tầng vô cùng chặt chẽ lấy cảm hứng từ framework Angular của Google. NestJS tổ chức mã nguồn dựa trên các khái niệm Modules (Đóng gói tính năng), Controllers (Tiếp nhận request) và Providers/Services (Xử lý nghiệp vụ logic và kết nối database). Framework này tích hợp sẵn các mẫu thiết kế cao cấp như Dependency Injection (Tiêm phụ thuộc) và Inversion of Control (Đảo ngược điều khiển), giúp mã nguồn Backend đạt được tính bao đóng tuyệt đối, cực kỳ dễ dàng cho việc viết các kịch bản kiểm thử tự động (Unit Test/Integration Test) và bảo trì hệ thống khi quy mô showroom mở rộng.
+Lý do học thuật để Node.js trở thành sự lựa chọn tối ưu cho hệ thống Backend của TQ Auto nằm ở cơ chế xử lý bất đồng bộ (Asynchronous) theo mô hình Vòng lặp sự kiện đơn luồng (Single-threaded Event Loop) kết hợp Non-blocking I/O. Trong các hệ thống máy chủ truyền thống như Apache chạy PHP, mỗi khi có một yêu cầu truy vấn dữ liệu từ khách hàng gửi đến (ví dụ: bấm tìm kiếm xe hoặc thực hiện ghi một đơn đặt lịch hẹn vào database), máy chủ sẽ phải sinh ra một luồng xử lý (Thread) riêng biệt để phục vụ. Khi số lượng khách hàng truy cập tăng cao cùng một lúc, hệ thống sẽ nhanh chóng rơi vào trạng thái cạn kiệt tài nguyên bộ nhớ RAM và gây nghẽn mạch.
+Node.js giải quyết triệt để bài toán này bằng cách sử dụng duy nhất một luồng chính để tiếp nhận tất cả các yêu cầu. Khi gặp các tác vụ tốn thời gian như đọc/ghi cơ sở dữ liệu MySQL, Node.js sẽ chuyển giao tác vụ đó cho các luồng ngầm của hệ điều hành (libuv thread pool) xử lý và lập tức quay trở lại tiếp nhận yêu cầu của khách hàng tiếp theo. Khi dữ liệu được xử lý xong, một sự kiện (Event) sẽ được kích hoạt để trả kết quả về cho người dùng. Cơ chế này giúp máy chủ TQ Auto đạt được hiệu suất xử lý luồng cực cao, vận hành ổn định và phản hồi thông tin gần như lập tức ngay cả trong các khung giờ cao điểm khi showroom triển khai các chiến dịch quảng cáo lớn thu hút hàng ngàn lượt truy cập đồng thời.
+1.3.3. Mô hình MVC
+Kiến trúc phần mềm là xương sống quyết định đến độ bền vững, tính tổ chức khoa học và khả năng tiến hóa lâu dài của một dự án công nghệ thông tin. Đối với hệ thống website TQ Auto, toàn bộ luồng hoạt động và cấu trúc mã nguồn được thiết kế chặt chẽ dựa trên mẫu kiến trúc kinh điển MVC (Model - View - Controller). Đây là một mẫu kiến trúc phần mềm có lịch sử phát triển lâu đời và có tầm ảnh hưởng sâu rộng nhất trong lịch sử kỹ thuật phần mềm thế giới.
+Mô hình MVC được phát minh vào năm 1978 bởi nhà khoa học máy tính người Na Uy Trygve Reenskaug tại Trung tâm Nghiên cứu Xerox PARC danh tiếng, khi ông đang tìm kiếm một giải pháp cấu trúc để quản lý giao diện tương tác người-máy trên ngôn ngữ Smalltalk-80. Đến cuối thập niên 1990 và đầu những năm 2000, với sự bùng nổ của mạng Internet toàn cầu, mô hình MVC đã bước vào giai đoạn hoàng kim khi trở thành triết lý thiết kế cốt lõi của hàng loạt các framework phát triển web huyền thoại như Struts (Java), Ruby on Rails (Ruby), Django (Python) và Laravel (PHP).
+Triết lý tối cao của mô hình MVC dựa trên nguyên lý "Sự phân tách các mối quan tâm" (Separation of Concerns - SoC), tiến hành bóc tách toàn bộ mã nguồn phức tạp của một ứng dụng thành ba thành phần chức năng biệt lập, sở hữu ranh giới trách nhiệm vô cùng rõ ràng:
+Model (Lớp Dữ liệu): Thành phần này giữ vai trò là người quản lý trực tiếp và duy nhất đối với toàn bộ thực thể dữ liệu của hệ thống, định nghĩa cấu trúc của các bảng biểu, thực hiện các quy tắc logic nghiệp vụ nội bộ (Business Logic) và chịu trách nhiệm thực thi các câu lệnh tương tác trực tiếp (đọc, ghi, cập nhật, xóa) với hệ quản trị cơ sở dữ liệu. Model hoàn toàn độc lập với giao diện hiển thị, nó không hề biết dữ liệu của mình sẽ được vẽ lên màn hình như thế nào.
+View (Lớp Hiển thị): Thành phần này đảm nhận chức năng xây dựng cấu trúc đồ họa và hiển thị thông tin trực quan cho người dùng cuối. View nhận dữ liệu từ Controller và chuyển đổi dữ liệu đó thành các thành phần giao diện như bảng biểu, thẻ card sản phẩm, biểu mẫu nhập liệu. Đồng thời, View là nơi trực tiếp thu thập các hành vi tương tác, các sự kiện bấm chuột hay nhập liệu của khách hàng để chuyển tiếp về cho hệ thống xử lý. Trong dự án này, Next.js đóng vai trò điều khiển và render thành phần View một cách thông minh.
+Controller (Lớp Điều phối): Thành phần này đóng vai trò như một bộ não điều khiển trung gian hoặc một người phân luồng giao thông của hệ thống. Khi có một yêu cầu HTTP Request gửi đến từ View, Controller sẽ tiếp nhận, tiến hành các bước kiểm tra tính hợp lệ của tham số đầu vào (Validation), sau đó gọi các phương thức xử lý tương ứng từ lớp Model để lấy ra hoặc thay đổi trạng thái dữ liệu. Sau khi nhận được kết quả xử lý từ Model, Controller sẽ thực hiện việc lựa chọn hoặc đóng gói dữ liệu đó vào một cấu trúc phù hợp (ví dụ như cấu trúc JSON hoặc một View cụ thể) để phản hồi lại cho phía Client.
+Việc áp dụng mô hình MVC vào quá trình thiết kế hệ thống website TQ Auto mang lại những giá trị học thuật và thực tiễn vô cùng to lớn cho đồ án tốt nghiệp. Ý nghĩa đầu tiên nằm ở khả năng module hóa và tối ưu hóa quy trình phát triển. Do ba lớp được phân tách rạch ròi qua các thư mục độc lập, sinh viên có thể tiến hành xây dựng giao diện hiển thị (View) ở phía Frontend hoàn toàn song song với việc viết các hàm truy vấn SQL cấu trúc bảng dữ liệu (Model) ở phía Backend mà không sợ xảy ra hiện tượng chồng chéo hay xung đột mã nguồn.
+Ý nghĩa thứ hai là giảm thiểu tối đa sự phụ thuộc lẫn nhau giữa các đoạn mã (Low Coupling). Nếu trong tương lai, ban quản lý showroom TQ Auto muốn thay đổi hoàn toàn phong cách thiết kế giao diện từ giao diện phẳng sang giao diện Glassmorphism hiện đại, lập trình viên chỉ cần can thiệp và chỉnh sửa ở lớp View mà không cần phải thay đổi một dòng code logic nghiệp vụ nào ở lớp Model hay Controller bên dưới. Cuối cùng, cấu trúc MVC giúp mã nguồn trở nên vô cùng trong sáng, tạo điều kiện lý tưởng cho công tác cô lập lỗi khi xảy ra sự cố, đồng thời giúp cho hội đồng chấm đồ án dễ dàng đánh giá được tư duy tổ chức hệ thống chuẩn mực của sinh viên thực hiện.
+1.3.4. Hệ quản trị cơ sở dữ liệu: MySQL / MongoDB
+Cơ sở dữ liệu là nền móng lưu trữ tài sản thông tin của toàn bộ doanh nghiệp, quyết định trực tiếp đến tính an toàn, bảo mật và tốc độ vận hành của hệ thống. Để giải quyết bài toán lưu trữ một cách khoa học nhất cho website TQ Auto, đồ án tiến hành phân tích sâu sắc bản chất của dữ liệu và đề xuất hai giải pháp công nghệ cơ sở dữ liệu hàng đầu hiện nay, đại diện cho hai trường phái quản trị dữ liệu kinh điển: MySQL (Hệ quản trị CSDL quan hệ - RDBMS) và MongoDB (Hệ quản trị CSDL phi quan hệ - NoSQL).
+MySQL là một hệ quản trị cơ sở dữ liệu quan hệ mã nguồn mở sử dụng ngôn ngữ truy vấn có cấu trúc SQL, được phát hành phiên bản đầu tiên vào ngày 23 tháng 5 năm 1995 bởi công ty Thụy Điển MySQL AB, và sau đó được tập đoàn Sun Microsystems mua lại trước khi chính thức thuộc quyền sở hữu và phát triển của tập đoàn công nghệ Oracle vào năm 2010. Trong suốt chiều dài lịch sử của ngành công nghệ phần mềm, MySQL luôn đứng vững như một vị vua không ngai trong phân khúc lưu trữ dữ liệu có cấu trúc nhờ vào tính ổn định tuyệt đối, khả năng tối ưu hóa bộ nhớ đệm và cộng đồng hỗ trợ khổng lồ toàn cầu.
+Tiến trình phát triển của MySQL ghi nhận những cột mốc vĩ đại, trong đó phiên bản MySQL 5.7 (phát hành năm 2015) đã đặt nền móng cho việc hỗ trợ kiểu dữ liệu JSON bản địa. Đặc biệt, sự ra đời của thế hệ MySQL 8.0 (phát hành vào tháng 4 năm 2018) đã tạo nên một bước nhảy vọt về mặt công nghệ. MySQL 8.0 mang đến những cải tiến mang tính cách mạng: nâng cao hiệu năng thực thi các câu lệnh phức tạp lên gấp 2 lần so với phiên bản 5.7, tối ưu hóa các hàm cửa sổ (Window Functions), hỗ trợ biểu thức bảng chung (Common Table Expressions - CTE) để xử lý các truy vấn đệ quy, đồng thời nâng cấp toàn diện cơ chế bảo mật dữ liệu mã hóa mặc định và hệ thống phân quyền tài khoản chi tiết đến từng phân hệ tác vụ.
+Trong kiến trúc lưu trữ của website TQ Auto, MySQL được lựa chọn làm giải pháp lưu trữ cốt lõi cho các thực thể dữ liệu có tính chất đóng khung cấu trúc, đòi hỏi các mối quan hệ ràng buộc khóa ngoại chặt chẽ và bắt buộc phải tuân thủ nghiêm ngặt các thuộc tính giao dịch ACID (Atomicity, Consistency, Isolation, Durability). Cụ thể, các bảng dữ liệu về tài khoản người dùng (users), thông tin phân quyền vai trò nhân viên (role), thông tin quản lý danh mục hãng xe (categories) và đặc biệt là bảng quản lý lịch hẹn xem xe của khách hàng (appointments) sẽ được lưu trữ trong MySQL. Việc áp dụng cơ sở dữ liệu quan hệ ở đây giúp đảm bảo tính nhất quán tuyệt đối của dữ liệu: không bao giờ xảy ra tình trạng một lịch hẹn được tạo ra cho một chiếc xe không tồn tại, thông tin lịch trình của khách hàng không bị sai lệch hay mất mát trong quá trình ghi dữ liệu đồng thời, đảm bảo tính an toàn pháp lý và uy tín vận hành cho showroom.
+Song song với giải pháp quan hệ, đồ án mở rộng nghiên cứu tích hợp MongoDB – một hệ quản trị cơ sở dữ liệu phi quan hệ (NoSQL) hướng tài liệu (Document-oriented) phổ biến nhất thế giới, được khởi xướng phát triển vào năm 2007 bởi công ty 10gen (sau này đổi tên thành MongoDB Inc.) và chính thức ra mắt phiên bản mã nguồn mở đầu tiên vào tháng 2 năm 2009. Thay vì ép buộc dữ liệu phải tuân theo cấu trúc các hàng và cột cố định của các bảng như SQL, MongoDB tổ chức dữ liệu dưới dạng các "Tài liệu" (Documents) linh hoạt, sử dụng định dạng BSON (Binary JSON). Lịch sử của MongoDB gắn liền với sự phát triển bùng nổ của các ứng dụng web thế hệ mới đòi hỏi khả năng mở rộng quy mô linh hoạt (Horizontal Scaling).
+Các cột mốc phát triển quan trọng của MongoDB bao gồm phiên bản MongoDB 3.2 (năm 2015) giới thiệu kiến trúc lưu trữ WireTiger mặc định giúp tối ưu hóa nén dữ liệu và khóa cấp tài liệu, phiên bản MongoDB 4.0 (năm 2018) chính thức hỗ trợ giao dịch đa tài liệu đạt chuẩn ACID, và các thế hệ mới gần đây như MongoDB 6.0 và 7.0 liên tục bổ sung tính năng xử lý dữ liệu chuỗi thời gian (Time-series data), mã hóa dữ liệu ở mức truy vấn (Queryable Encryption) và tối ưu hóa sâu bộ máy tìm kiếm toàn văn Full-text Search.
+Đối với hệ thống TQ Auto, MongoDB thể hiện ưu thế vượt trội khi được áp dụng để quản lý thực thể dữ liệu chi tiết về sản phẩm xe ô tô (cars). Ô tô là dòng sản phẩm có thuộc tính thông số kỹ thuật vô cùng đa dạng và phức tạp tùy thuộc vào từng hãng xe và phân khúc xe khác nhau. Ví dụ, một chiếc xe điện sẽ có các trường thông số về dung lượng pin, quãng đường di chuyển mỗi lần sạc, công suất cổng sạc; trong khi một chiếc xe sử dụng động cơ đốt trong truyền thống lại yêu cầu các trường về dung tích xi-lanh, dung tích bình nhiên liệu, tiêu chuẩn khí thải. Nếu sử dụng cơ sở dữ liệu quan hệ SQL truyền thống, lập trình viên sẽ phải thiết kế rất nhiều bảng phụ và thực hiện các câu lệnh JOIN vô cùng phức tạp, làm sụt giảm nghiêm trọng tốc độ tải trang.
+Cấu trúc không định hình (Schema-less) của MongoDB giải quyết triệt để bài toán này, cho phép lưu trữ toàn bộ các thông số kỹ thuật biến động, danh sách các trang bị tiện nghi và bộ sưu tập album hình ảnh đa phương tiện của mỗi chiếc xe vào trong một tài liệu Document duy nhất. Điều này giúp tối ưu hóa tốc độ truy xuất dữ liệu từ Backend trả về cho giao diện Next.js phía Frontend, mang lại trải nghiệm tìm kiếm và lướt xem chi tiết xe mượt mà, tức thì cho khách hàng khi tham quan showroom trực tuyến.
+
+
+CHƯƠNG 2: PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG
+2.1. Khảo sát và mô tả hệ thống
+Hệ thống website bán ô tô trực tuyến cho showroom TQ Auto được xây dựng nhằm hỗ trợ hai nhóm hoạt động chính: phục vụ khách hàng tra cứu thông tin xe và hỗ trợ nhân viên, quản trị viên quản lý dữ liệu kinh doanh. Khách hàng truy cập website có thể xem danh sách xe, sử dụng bộ lọc để tìm xe phù hợp, xem chi tiết từng xe, gửi thông tin liên hệ hoặc đặt lịch xem xe. Nhân viên và quản trị viên sử dụng khu vực quản trị để cập nhật xe, quản lý danh mục, theo dõi khách hàng và xử lý lịch hẹn.
+Quy trình nghiệp vụ tổng quát bắt đầu từ việc khách hàng truy cập website và tìm kiếm xe theo nhu cầu. Sau khi chọn một xe cụ thể, khách hàng xem thông tin chi tiết gồm hình ảnh, giá bán, thông số kỹ thuật, tình trạng xe và mô tả. Nếu có nhu cầu, khách hàng gửi lịch hẹn xem xe hoặc yêu cầu tư vấn. Hệ thống ghi nhận thông tin này và hiển thị trong khu vực quản trị để nhân viên tiếp nhận, xác nhận và chăm sóc khách hàng.
+Về phía showroom, quản trị viên có thể thêm xe mới, chỉnh sửa thông tin xe, đánh dấu xe đã bán hoặc ẩn xe không còn kinh doanh. Hệ thống cũng hỗ trợ theo dõi số lượng xe, khách hàng tiềm năng, lịch hẹn và các thống kê cơ bản. Nhờ đó, hoạt động quản lý được tập trung hơn so với phương pháp thủ công.
+2.2. Tác nhân của hệ thống
+Tác nhân
+Vai trò
+Chức năng chính
+Khách hàng
+Người truy cập website để tìm hiểu và đặt lịch xem xe
+Xem danh sách xe, tìm kiếm, xem chi tiết xe, đăng ký hoặc đăng nhập, đặt lịch xem xe, gửi liên hệ tư vấn
+Nhân viên
+Người tiếp nhận nhu cầu và hỗ trợ khách hàng
+Xem lịch hẹn, cập nhật trạng thái lịch hẹn, theo dõi khách hàng, hỗ trợ tư vấn
+Quản trị viên
+Người quản lý toàn bộ dữ liệu và cấu hình hệ thống
+Quản lý xe, danh mục xe, tài khoản, khách hàng, lịch hẹn và thống kê
+
+2.3. Yêu cầu chức năng
+Mã
+Tên chức năng
+Mô tả
+F01
+Xem danh sách xe
+Hiển thị các xe đang kinh doanh kèm hình ảnh, tên xe, giá bán, năm sản xuất, số kilomet và trạng thái
+F02
+Tìm kiếm và lọc xe
+Cho phép lọc theo hãng xe, mức giá, năm sản xuất, loại xe và tình trạng xe
+F03
+Xem chi tiết xe
+Hiển thị thông tin đầy đủ của xe, thư viện ảnh, thông số kỹ thuật, mô tả, chính sách hỗ trợ và xe liên quan
+F04
+Xem xe 360 độ hoặc 3D
+Cung cấp khu vực mô phỏng xem xe xung quanh, hỗ trợ thao tác xoay, phóng to, thu nhỏ và toàn màn hình khi có dữ liệu phù hợp
+F05
+Đăng ký, đăng nhập
+Cho phép khách hàng tạo tài khoản, đăng nhập và sử dụng các chức năng cá nhân hóa
+F06
+Đặt lịch xem xe
+Khách hàng nhập thông tin cá nhân, xe quan tâm, ngày giờ hẹn và ghi chú để gửi lịch xem xe
+F07
+Quản lý xe
+Quản trị viên thêm, sửa, xóa, cập nhật trạng thái và hình ảnh xe
+F08
+Quản lý danh mục
+Quản trị viên tạo và chỉnh sửa các loại xe như Sedan, SUV, Hatchback, Pickup
+F09
+Quản lý khách hàng
+Lưu thông tin khách hàng, nhu cầu quan tâm và lịch sử liên hệ
+F10
+Quản lý lịch hẹn
+Theo dõi, xác nhận, hoàn thành hoặc hủy lịch hẹn xem xe
+F11
+Thống kê
+Hiển thị số lượng xe, khách hàng, lịch hẹn và các xe được quan tâm nhiều
+
+2.4. Yêu cầu phi chức năng
+Nhóm yêu cầu
+Nội dung
+Hiệu năng
+Trang danh sách xe và chi tiết xe cần tải nhanh, hình ảnh được tối ưu, thao tác tìm kiếm và lọc phản hồi rõ ràng
+Tính dễ sử dụng
+Giao diện phải rõ ràng, dễ thao tác trên máy tính và điện thoại, các nút đặt lịch và liên hệ cần nổi bật
+Bảo mật
+Tài khoản quản trị phải được bảo vệ, dữ liệu khách hàng không được hiển thị công khai, các biểu mẫu cần kiểm tra dữ liệu đầu vào
+Khả năng mở rộng
+Mã nguồn cần tách component, tách dữ liệu và tổ chức theo module để dễ bổ sung backend hoặc chức năng mới
+Khả năng bảo trì
+Cấu trúc dự án rõ ràng, đặt tên biến và thư mục dễ hiểu, hạn chế lặp mã nguồn giữa các màn hình
+
+2.5. Biểu đồ Use Case
+Biểu đồ Use Case tổng quát của hệ thống có thể mô tả bằng lời như sau: khách hàng tương tác với các chức năng xem xe, tìm kiếm xe, xem chi tiết, đăng ký, đăng nhập, đặt lịch và liên hệ tư vấn. Nhân viên tương tác với các chức năng xem khách hàng, xem lịch hẹn và cập nhật trạng thái lịch hẹn. Quản trị viên có quyền cao nhất, bao gồm quản lý xe, quản lý danh mục, quản lý khách hàng, quản lý lịch hẹn, xem thống kê và quản lý tài khoản.
+Use Case
+Tác nhân
+Mục tiêu
+Tra cứu xe
+Khách hàng
+Tìm được xe phù hợp với nhu cầu và ngân sách
+Xem chi tiết xe
+Khách hàng
+Nắm thông tin đầy đủ trước khi liên hệ showroom
+Đặt lịch xem xe
+Khách hàng
+Gửi yêu cầu xem xe tại showroom theo thời gian mong muốn
+Quản lý xe
+Quản trị viên
+Duy trì dữ liệu xe chính xác và cập nhật
+Xử lý lịch hẹn
+Nhân viên, Quản trị viên
+Xác nhận, hoàn thành hoặc hủy lịch hẹn của khách hàng
+Xem thống kê
+Quản trị viên
+Theo dõi tình hình hoạt động và mức độ quan tâm của khách hàng
+
+2.6. Đặc tả một số Use Case chính
+2.6.1. Use Case đăng ký, đăng nhập
+Thành phần
+Nội dung
+Tác nhân
+Khách hàng, quản trị viên
+Điều kiện bắt đầu
+Người dùng truy cập trang đăng nhập hoặc đăng ký
+Luồng chính
+Người dùng nhập thông tin tài khoản; hệ thống kiểm tra dữ liệu; nếu hợp lệ thì tạo phiên đăng nhập hoặc tài khoản mới
+Luồng ngoại lệ
+Thông tin thiếu, email không hợp lệ, mật khẩu sai hoặc tài khoản không tồn tại
+Kết quả
+Người dùng đăng nhập thành công hoặc nhận thông báo lỗi phù hợp
+
+2.6.2. Use Case tìm kiếm và xem chi tiết xe
+Thành phần
+Nội dung
+Tác nhân
+Khách hàng
+Điều kiện bắt đầu
+Khách hàng truy cập trang danh sách xe
+Luồng chính
+Khách hàng chọn bộ lọc; hệ thống hiển thị danh sách xe phù hợp; khách hàng chọn một xe để xem chi tiết
+Luồng ngoại lệ
+Không có xe phù hợp với điều kiện tìm kiếm, hệ thống hiển thị thông báo hoặc danh sách rỗng
+Kết quả
+Khách hàng xem được thông tin chi tiết và có thể đặt lịch hoặc liên hệ tư vấn
+
+2.6.3. Use Case đặt lịch xem xe
+Thành phần
+Nội dung
+Tác nhân
+Khách hàng
+Điều kiện bắt đầu
+Khách hàng đã chọn xe quan tâm hoặc truy cập trang đặt lịch
+Luồng chính
+Khách hàng nhập họ tên, số điện thoại, email, xe quan tâm, ngày giờ hẹn và ghi chú; hệ thống kiểm tra dữ liệu và lưu lịch hẹn
+Luồng ngoại lệ
+Thiếu thông tin bắt buộc, số điện thoại không hợp lệ hoặc thời gian hẹn không phù hợp
+Kết quả
+Lịch hẹn được tạo với trạng thái chờ xác nhận
+
+2.6.4. Use Case quản lý xe
+Thành phần
+Nội dung
+Tác nhân
+Quản trị viên
+Điều kiện bắt đầu
+Quản trị viên đăng nhập vào hệ thống
+Luồng chính
+Quản trị viên thêm xe mới hoặc chỉnh sửa thông tin xe hiện có; hệ thống lưu dữ liệu và cập nhật danh sách xe
+Luồng ngoại lệ
+Dữ liệu giá, năm sản xuất hoặc hình ảnh không hợp lệ; hệ thống yêu cầu chỉnh sửa
+Kết quả
+Thông tin xe được cập nhật trên website
+
+2.7. Thiết kế quy trình nghiệp vụ
+Quy trình phía khách hàng gồm các bước: truy cập website, tìm kiếm xe, xem chi tiết xe, so sánh thông tin, gửi liên hệ hoặc đặt lịch xem xe. Sau khi lịch hẹn được gửi, hệ thống lưu thông tin ở trạng thái chờ xác nhận. Nhân viên truy cập khu vực quản trị để xem lịch hẹn, liên hệ lại với khách hàng và cập nhật trạng thái lịch hẹn.
+Quy trình phía quản trị bắt đầu từ việc đăng nhập vào dashboard. Quản trị viên quản lý danh sách xe, cập nhật trạng thái xe, bổ sung hình ảnh và kiểm tra dữ liệu khách hàng. Khi xe đã bán, quản trị viên có thể chuyển trạng thái để tránh khách hàng tiếp tục đặt lịch nhầm. Các số liệu thống kê hỗ trợ ban quản lý đánh giá mức độ quan tâm của khách hàng đối với từng mẫu xe.
+2.8. Thiết kế lớp
+Các lớp chính của hệ thống được xác định dựa trên dữ liệu nghiệp vụ. Lớp User biểu diễn người dùng hệ thống, bao gồm khách hàng, nhân viên và quản trị viên. Lớp Car biểu diễn thông tin xe. Lớp Category biểu diễn danh mục hoặc loại xe. Lớp Appointment biểu diễn lịch hẹn xem xe. Ngoài ra có thể bổ sung lớp CarImage để quản lý nhiều hình ảnh cho một xe và lớp ContactRequest để lưu yêu cầu tư vấn.
+Lớp
+Thuộc tính chính
+Ý nghĩa
+User
+id, fullName, phone, email, passwordHash, role, createdAt
+Lưu thông tin tài khoản và phân quyền người dùng
+Category
+id, name, slug, description, status
+Quản lý loại xe hoặc nhóm xe
+Car
+id, categoryId, name, brand, price, year, mileage, transmission, fuel, color, status, description
+Lưu thông tin chính của xe
+CarImage
+id, carId, imageUrl, sortOrder
+Lưu nhiều hình ảnh cho từng xe
+Appointment
+id, carId, customerName, phone, email, appointmentDate, appointmentTime, note, status
+Lưu lịch hẹn xem xe của khách hàng
+ContactRequest
+id, customerName, phone, email, message, status
+Lưu yêu cầu tư vấn không gắn trực tiếp với lịch hẹn
+
+2.9. Thiết kế cơ sở dữ liệu
+Cơ sở dữ liệu được thiết kế theo hướng quan hệ để bảo đảm tính rõ ràng và dễ truy vấn. Các bảng chính bao gồm users, categories, cars, car_images, appointments và contact_requests. Quan hệ giữa các bảng được mô tả như sau: một danh mục có nhiều xe, một xe có nhiều hình ảnh, một xe có thể có nhiều lịch hẹn, một khách hàng có thể gửi nhiều yêu cầu tư vấn hoặc lịch hẹn.
+Bảng
+Trường dữ liệu tiêu biểu
+Ghi chú
+users
+id, full_name, phone, email, password_hash, role, created_at, updated_at
+Lưu tài khoản khách hàng, nhân viên và quản trị viên
+categories
+id, name, slug, description, status
+Lưu danh mục xe
+cars
+id, category_id, name, brand, price, year, mileage, transmission, fuel, color, condition, status, description
+Lưu dữ liệu xe đang kinh doanh
+car_images
+id, car_id, image_url, sort_order, created_at
+Lưu ảnh đại diện và thư viện ảnh xe
+appointments
+id, car_id, customer_name, phone, email, appointment_date, appointment_time, note, status, created_at
+Lưu lịch hẹn xem xe
+contact_requests
+id, customer_name, phone, email, message, status, created_at
+Lưu yêu cầu liên hệ tư vấn
+
+Trong thiết kế này, khóa chính của mỗi bảng là trường id. Bảng cars có khóa ngoại category_id tham chiếu đến categories. Bảng car_images và appointments có khóa ngoại car_id tham chiếu đến cars. Trường status được sử dụng để quản lý trạng thái nghiệp vụ như xe đang bán, đã bán, lịch hẹn chờ xác nhận, đã xác nhận, hoàn thành hoặc đã hủy.
+2.10. Thiết kế giao diện
+Giao diện website được thiết kế theo phong cách hiện đại, chuyên nghiệp, phù hợp với lĩnh vực ô tô. Màu sắc chủ đạo gồm trắng, đen, xám và màu nhấn đỏ nhằm tạo cảm giác mạnh mẽ, rõ ràng và sang trọng. Các thành phần giao diện được xây dựng theo dạng component tái sử dụng như header, footer, thẻ xe, bộ lọc, form, badge trạng thái và bảng dữ liệu.
+Trang chủ có nhiệm vụ giới thiệu nhanh về showroom, hiển thị hình ảnh xe nổi bật, thanh tìm kiếm nhanh, danh sách xe nổi bật, lợi ích và quy trình mua xe. Trang danh sách xe tập trung vào bộ lọc và lưới thẻ xe, giúp khách hàng dễ so sánh. Trang chi tiết xe hiển thị thư viện ảnh, thông tin giá, thông số kỹ thuật, mô tả, chính sách hỗ trợ và khu vực xem xe 360 độ hoặc 3D. Trang đặt lịch cung cấp biểu mẫu rõ ràng để khách hàng gửi thông tin hẹn xem xe.
+Khu vực quản trị được thiết kế theo dạng dashboard với sidebar điều hướng, header quản trị, các thẻ thống kê và bảng dữ liệu. Các trang quản trị gồm tổng quan, quản lý xe, danh mục xe, khách hàng, lịch hẹn, thống kê và tài khoản. Thiết kế này giúp nhân viên dễ thao tác, đồng thời tạo nền tảng thuận lợi để kết nối backend trong giai đoạn triển khai.
+
+CHƯƠNG 3: CÀI ĐẶT VÀ TRIỂN KHAI
+3.1. Công cụ
+VS Code
+Git/GitHub
+Server
+3.2. Frontend
+Trang chủ
+Danh sách xe
+Chi tiết xe
+Đặt lịch
+3.3. Backend
+Quản lý xe
+Quản lý người dùng
+Quản lý lịch hẹn
+Thống kê
+3.4. Kiểm thử
+Test chức năng
+Test giao diện
+Fix lỗi
+
+KẾT LUẬN
+TÀI LIỆU THAM KHẢO
