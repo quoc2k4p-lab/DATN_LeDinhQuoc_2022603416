@@ -13,6 +13,8 @@ type ButtonProps = {
   variant?: keyof typeof variants;
   className?: string;
   type?: "button" | "submit";
+  disabled?: boolean;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 export function Button({
@@ -21,6 +23,8 @@ export function Button({
   variant = "primary",
   className,
   type = "button",
+  disabled = false,
+  onClick,
 }: ButtonProps) {
   const classes = cn(
     "inline-flex h-11 items-center justify-center gap-2 rounded-md px-5 text-sm font-bold uppercase tracking-[0.05em] transition",
@@ -37,7 +41,12 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes}>
+    <button
+      type={type}
+      className={cn(classes, disabled && "opacity-50 cursor-not-allowed")}
+      disabled={disabled}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

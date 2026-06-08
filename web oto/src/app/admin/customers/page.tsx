@@ -1,42 +1,59 @@
-import { Phone, Plus, Search } from "lucide-react";
-import { AdminShell } from "@/components/admin/AdminShell";
-import { DataTable } from "@/components/admin/DataTable";
-import { Button } from "@/components/ui/Button";
-import { customers } from "@/data/mock";
+export const dynamic = "force-dynamic";
 
-export default function CustomersPage() {
+import { AdminShell } from "@/components/admin/AdminShell";
+import { AdminCustomerList } from "@/components/admin/AdminCustomerList";
+import { getCustomersAction } from "@/lib/actions/customerActions";
+import { getMeAction } from "@/lib/actions/auth";
+import { getPool, ensureDbExists } from "@/lib/db";
+
+export default async function CustomersPage() {
+  await ensureDbExists();
+  const pool = getPool();
+
+  // 1. Get logged-in user and role
+  const meRes = await getMeAction();
+  if (!meRes.success || !meRes.user) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#0b1016] text-white">
+        <p className="text-sm font-semibold text-zinc-400">Bạn cần đăng nhập để truy cập trang này.</p>
+      </div>
+    );
+  }
+
+  const currentUser = meRes.user;
+  const basePath = currentUser.role === "staff" ? "/staff" : "/admin";
+
+  // 2. Fetch initial customers list (roles-scoped in action)
+  const customersRes = await getCustomersAction({});
+  const initialCustomers = customersRes.success && customersRes.customers ? customersRes.customers : [];
+
+  // 3. Fetch cars for select inputs
+  const [carRows] = await pool.query("SELECT id, title FROM cars ORDER BY title ASC;");
+  const cars = (carRows as any[]).map((c) => ({
+    id: c.id,
+    title: c.title,
+  }));
+
+  // 4. Fetch staff members for assignments
+  const [staffRows] = await pool.query("SELECT id, full_name, email FROM users WHERE role IN ('admin', 'staff') AND status = 'active';");
+  const staff = (staffRows as any[]).map((s) => ({
+    id: s.id,
+    full_name: s.full_name,
+    email: s.email,
+  }));
+
   return (
     <AdminShell
       title="Quản lý khách hàng"
-      subtitle="Danh sách lead và khách đang tư vấn, tái tạo screen quản lý khách hàng trong Stitch bằng data mock."
+      subtitle="Theo dõi lead, nhu cầu mua xe, ngân sách, người quản lý và tiến độ tư vấn."
     >
-      <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex h-11 max-w-md flex-1 items-center gap-3 rounded-md border border-white/10 bg-white/5 px-4 text-sm text-zinc-500">
-          <Search size={18} />
-          Tìm theo tên, số điện thoại, dòng xe
-        </div>
-        <Button><Plus size={18} /> Thêm khách</Button>
-      </div>
-      <DataTable
-        columns={[
-          { key: "name", label: "Khách hàng" },
-          { key: "phone", label: "Điện thoại" },
-          { key: "interest", label: "Quan tâm" },
-          { key: "stage", label: "Giai đoạn", badge: true },
-          { key: "budget", label: "Ngân sách" },
-        ]}
-        rows={customers}
+      <AdminCustomerList
+        initialCustomers={initialCustomers}
+        cars={cars}
+        staff={staff}
+        currentUser={currentUser}
+        basePath={basePath}
       />
-      <div className="mt-8 grid gap-5 md:grid-cols-3">
-        {customers.slice(0, 3).map((customer) => (
-          <div key={customer.phone} className="rounded-md border border-white/10 bg-[#151a22] p-6">
-            <p className="font-display text-xl font-bold">{customer.name}</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-zinc-400"><Phone size={16} /> {customer.phone}</p>
-            <p className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-zinc-500">Xe quan tâm</p>
-            <p className="mt-1 font-semibold">{customer.interest}</p>
-          </div>
-        ))}
-      </div>
     </AdminShell>
   );
 }

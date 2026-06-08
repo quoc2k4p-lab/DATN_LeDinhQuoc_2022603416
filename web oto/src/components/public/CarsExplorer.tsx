@@ -1,17 +1,23 @@
 "use client";
 
 import { ChevronDown, ChevronUp, Search, SlidersHorizontal, X } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import { CarCard } from "@/components/public/CarCard";
-import type { Car } from "@/data/mock";
+import type { UiCar } from "@/lib/dbAdapter";
 
 const filterGroups = [
-  { key: "brand", label: "Hãng xe", options: ["Tất cả", "Toyota", "Mercedes", "BMW", "Lexus", "Porsche", "Audi"] },
+  { key: "brand", label: "Hãng xe", options: ["Tất cả", "Toyota", "Mercedes", "BMW", "Lexus", "Porsche", "Audi", "Mazda", "Honda"] },
   { key: "price", label: "Khoảng giá", options: ["Tất cả", "Dưới 1.5 tỷ", "1.5 - 2 tỷ", "Trên 2 tỷ"] },
-  { key: "year", label: "Năm sản xuất", options: ["Tất cả", "2022", "2021", "2020", "2019"] },
-  { key: "status", label: "Tình trạng", options: ["Tất cả", "Còn xe", "Giữ chỗ", "Đã bán"] },
-  { key: "fuel", label: "Nhiên liệu", options: ["Tất cả", "Xăng", "Hybrid", "Điện"] },
+  { key: "year", label: "Năm sản xuất", options: ["Tất cả", "2023", "2022", "2021", "2020", "2019"] },
+  { key: "condition", label: "Tình trạng xe", options: ["Tất cả", "Xe mới", "Xe cũ"] },
+  { key: "bodyType", label: "Kiểu dáng", options: ["Tất cả", "Sedan", "SUV", "Hatchback", "Pickup", "Coupe"] },
+  { key: "transmission", label: "Hộp số", options: ["Tất cả", "Tự động", "Số sàn"] },
+  { key: "fuel", label: "Nhiên liệu", options: ["Tất cả", "Xăng", "Dầu", "Hybrid", "Điện"] },
+  { key: "drivetrain", label: "Hệ dẫn động", options: ["Tất cả", "FWD", "RWD", "AWD", "4WD"] },
+  { key: "origin", label: "Xuất xứ", options: ["Tất cả", "Nhập khẩu", "Trong nước"] },
+  { key: "status", label: "Trạng thái xe", options: ["Tất cả", "Còn xe", "Đang giữ chỗ", "Đã bán"] },
 ] as const;
 
 type FilterKey = (typeof filterGroups)[number]["key"];
@@ -25,8 +31,8 @@ function priceValue(price: string) {
   return Number(price.replace(/\D/g, ""));
 }
 
-function statusLabel(status: Car["status"]) {
-  return status === "available" ? "Còn xe" : status === "reserved" ? "Giữ chỗ" : "Đã bán";
+function statusLabel(status: UiCar["status"]) {
+  return status === "available" ? "Còn xe" : status === "reserved" ? "Đang giữ chỗ" : "Đã bán";
 }
 
 function FilterDropdown({
@@ -103,10 +109,18 @@ function FilterDropdown({
   );
 }
 
-export function CarsExplorer({ cars }: { cars: Car[] }) {
-  const [query, setQuery] = useState("");
+export function CarsExplorer({ cars }: { cars: UiCar[] }) {
+  const searchParams = useSearchParams();
+  const searchVal = searchParams ? searchParams.get("search") || "" : "";
+  const [query, setQuery] = useState(searchVal);
   const [filters, setFilters] = useState(defaultFilters);
   const [openFilter, setOpenFilter] = useState<FilterKey | null>(null);
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
+
+  // Sync with search param changes
+  useEffect(() => {
+    setQuery(searchVal);
+  }, [searchVal]);
 
   const filteredCars = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -122,6 +136,10 @@ export function CarsExplorer({ cars }: { cars: Car[] }) {
       const matchesBrand = filters.brand === "Tất cả" || car.brand === filters.brand;
       const matchesYear = filters.year === "Tất cả" || String(car.year) === filters.year;
       const matchesStatus = filters.status === "Tất cả" || statusLabel(car.status) === filters.status;
+      const matchesCondition =
+        filters.condition === "Tất cả" ||
+        (filters.condition === "Xe mới" && car.conditionType === "new") ||
+        (filters.condition === "Xe cũ" && car.conditionType === "used");
       const matchesFuel = filters.fuel === "Tất cả" || car.fuel === filters.fuel;
 
       const price = priceValue(car.price);
@@ -131,7 +149,30 @@ export function CarsExplorer({ cars }: { cars: Car[] }) {
         (filters.price === "1.5 - 2 tỷ" && price >= 1500000000 && price <= 2000000000) ||
         (filters.price === "Trên 2 tỷ" && price > 2000000000);
 
-      return matchesQuery && matchesBrand && matchesYear && matchesStatus && matchesFuel && matchesPrice;
+      const matchesBodyType = filters.bodyType === "Tất cả" || car.category === filters.bodyType;
+      const matchesTransmission =
+        filters.transmission === "Tất cả" ||
+        (filters.transmission === "Tự động" && car.transmission.includes("Tự động")) ||
+        (filters.transmission === "Số sàn" && car.transmission.includes("Số sàn"));
+      const matchesDrivetrain = filters.drivetrain === "Tất cả" || car.drivetrain === filters.drivetrain;
+      const matchesOrigin =
+        filters.origin === "Tất cả" ||
+        (filters.origin === "Nhập khẩu" && car.origin === "imported") ||
+        (filters.origin === "Trong nước" && car.origin === "domestic");
+
+      return (
+        matchesQuery &&
+        matchesBrand &&
+        matchesYear &&
+        matchesStatus &&
+        matchesCondition &&
+        matchesFuel &&
+        matchesPrice &&
+        matchesBodyType &&
+        matchesTransmission &&
+        matchesDrivetrain &&
+        matchesOrigin
+      );
     });
   }, [cars, filters, query]);
 
@@ -143,8 +184,23 @@ export function CarsExplorer({ cars }: { cars: Car[] }) {
 
   return (
     <section className="theme-page">
+      {/* Mobile Filter Toggle Bar */}
+      <div className="lg:hidden flex items-center justify-between border-b theme-border px-5 py-4 bg-[var(--surface)]">
+        <button
+          type="button"
+          onClick={() => setShowMobileFilters(!showMobileFilters)}
+          className="flex items-center gap-2 rounded border theme-border px-4 py-2.5 text-xs font-bold uppercase tracking-[0.05em] bg-[var(--background)] text-[var(--foreground)] transition hover:bg-[var(--muted)] cursor-pointer"
+        >
+          <SlidersHorizontal size={16} />
+          {showMobileFilters ? "Đóng bộ lọc" : "Bộ lọc tìm kiếm"}
+        </button>
+        <span className="text-xs font-bold uppercase tracking-wider theme-subtle">
+          {filteredCars.length} xe phù hợp
+        </span>
+      </div>
+
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-8 sm:px-8 lg:grid-cols-[320px_1fr]">
-        <aside className="h-fit rounded-md border theme-surface p-5">
+        <aside className={`h-fit rounded-md border theme-surface p-5 lg:block ${showMobileFilters ? "block" : "hidden"}`}>
           <div className="mb-5 flex items-center justify-between">
             <div className="flex items-center gap-2 font-display text-lg font-bold">
               <SlidersHorizontal size={20} />
@@ -196,7 +252,7 @@ export function CarsExplorer({ cars }: { cars: Car[] }) {
           ))}
 
           <div className="mt-3 flex gap-2">
-            <Button className="flex-1">Áp dụng</Button>
+            <Button className="flex-1" onClick={() => setShowMobileFilters(false)}>Áp dụng</Button>
             <button
               type="button"
               onClick={resetFilters}

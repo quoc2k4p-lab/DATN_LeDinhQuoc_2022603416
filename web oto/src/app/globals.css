@@ -29,6 +29,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-subtle: var(--subtle);
   --font-sans: var(--font-inter);
   --font-display: var(--font-montserrat);
 }
@@ -54,10 +59,20 @@ img {
   backdrop-filter: blur(18px);
 }
 
+:root[data-theme="light"] .glass {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(24, 24, 27, 0.1);
+}
+
 .admin-glass {
   background: rgba(17, 20, 26, 0.88);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
+}
+
+:root[data-theme="light"] .admin-glass {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(24, 24, 27, 0.1);
 }
 
 .theme-page {
@@ -87,3 +102,15 @@ img {
   background: var(--header);
   border-color: var(--line);
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

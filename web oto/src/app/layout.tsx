@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+import { FloatingContactButtons } from "@/components/common/FloatingContactButtons";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,13 +32,17 @@ export default function RootLayout({
     >
       <head>
         <script
+          id="theme-initializer"
           dangerouslySetInnerHTML={{
             __html:
               "try{var t=localStorage.getItem('theme')||'dark';document.documentElement.dataset.theme=t}catch(e){}",
           }}
         />
       </head>
-      <body className="min-h-full bg-[var(--background)] text-[var(--foreground)]">{children}</body>
+      <body className="min-h-full bg-[var(--background)] text-[var(--foreground)]">
+        {children}
+        <FloatingContactButtons />
+      </body>
     </html>
   );
 }

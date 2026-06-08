@@ -1,42 +1,41 @@
 "use client";
 
 import { Search } from "lucide-react";
-import { Button } from "@/components/ui/Button";
-
-const fields = [
-  {
-    label: "Thương hiệu",
-    options: ["Tất cả", "Toyota", "Mercedes", "BMW", "Lexus", "Porsche", "Audi"],
-  },
-  {
-    label: "Mức giá",
-    options: ["Tất cả", "Dưới 1.5 tỷ", "1.5 - 2 tỷ", "Trên 2 tỷ"],
-  },
-  {
-    label: "Năm sản xuất",
-    options: ["Tất cả", "2022", "2021", "2020", "2019"],
-  },
-];
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export function HomeSearchBar() {
+  const [query, setQuery] = useState("");
+  const router = useRouter();
+  const locale = useLocale();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const normalized = query.trim();
+    router.push(`/${locale}/cars${normalized ? `?search=${encodeURIComponent(normalized)}` : ""}`);
+  };
+
   return (
-    <div className="grid gap-3 rounded-md border theme-surface p-4 shadow-2xl shadow-black/20 md:grid-cols-[1fr_1fr_1fr_auto]">
-      {fields.map((field) => (
-        <label key={field.label} className="block">
-          <span className="mb-2 block text-[11px] font-bold uppercase tracking-[0.12em] theme-subtle">
-            {field.label}
-          </span>
-          <select className="h-11 w-full appearance-none rounded-md border theme-border bg-[var(--background)] px-3 text-sm text-[var(--foreground)] outline-none transition focus:border-[#e31837]">
-            {field.options.map((option) => (
-              <option key={option}>{option}</option>
-            ))}
-          </select>
-        </label>
-      ))}
-      <Button href="/cars" className="self-end">
-        <Search size={18} />
+    <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3 rounded-md border theme-surface p-4 shadow-2xl shadow-black/20">
+      <div className="relative flex-1">
+        <span className="absolute inset-y-0 left-4 flex items-center theme-subtle">
+          <Search size={20} />
+        </span>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Nhập tên xe, hãng xe hoặc dòng xe bạn muốn tìm kiếm..."
+          className="h-12 w-full rounded-md border theme-border bg-[var(--background)] pl-12 pr-4 text-sm text-[var(--foreground)] outline-none transition focus:border-[#e31837]"
+        />
+      </div>
+      <button
+        type="submit"
+        className="flex items-center justify-center gap-2 rounded-md bg-[#e31837] h-12 px-6 text-sm font-bold uppercase tracking-[0.05em] text-white hover:bg-[#c1122b] transition duration-200 w-full sm:w-auto shrink-0 cursor-pointer"
+      >
         Tìm kiếm
-      </Button>
-    </div>
+      </button>
+    </form>
   );
 }
