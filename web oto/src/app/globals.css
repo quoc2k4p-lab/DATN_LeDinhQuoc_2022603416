@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070b10;
+  --foreground: #f7f7f7;
+  --surface: #11161d;
+  --surface-strong: #151a22;
+  --muted: #171c23;
+  --line: rgba(255, 255, 255, 0.1);
+  --subtle: #a1a1aa;
+  --header: rgba(8, 12, 17, 0.95);
+  --accent: #e31837;
+  --accent-dark: #c2142d;
+  --ink: #f7f7f7;
+
+  --banner-bg: #080c11;
+  --banner-border: rgba(255, 255, 255, 0.1);
+  --banner-text: #ffffff;
+  --banner-text-subtle: rgba(255, 255, 255, 0.8);
+  --banner-overlay-from: rgba(7, 11, 16, 0.8);
+  --banner-overlay-via: rgba(7, 11, 16, 0.3);
+  --banner-overlay-to: rgba(7, 11, 16, 0.8);
+  --banner-glow: rgba(227, 24, 55, 0.15);
+  --banner-img-opacity: 0.6;
+  --banner-img-hover-opacity: 0.75;
+}
+
+:root[data-theme="light"] {
+  --background: #f7f7f5;
+  --foreground: #18181b;
+  --surface: #ffffff;
+  --surface-strong: #f1f1ef;
+  --muted: #eeeeea;
+  --line: rgba(24, 24, 27, 0.12);
+  --subtle: #60646c;
+  --header: rgba(255, 255, 255, 0.92);
+  --ink: #18181b;
+
+  --banner-bg: #080c11;
+  --banner-border: rgba(255, 255, 255, 0.12);
+  --banner-text: #ffffff;
+  --banner-text-subtle: rgba(255, 255, 255, 0.75);
+  --banner-overlay-from: rgba(7, 11, 16, 0.75);
+  --banner-overlay-via: rgba(7, 11, 16, 0.25);
+  --banner-overlay-to: rgba(7, 11, 16, 0.75);
+  --banner-glow: rgba(227, 24, 55, 0.12);
+  --banner-img-opacity: 0.7;
+  --banner-img-hover-opacity: 0.85;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-subtle: var(--subtle);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.glass {
+  background: rgba(8, 12, 17, 0.82);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+:root[data-theme="light"] .glass {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(24, 24, 27, 0.1);
+}
+
+.admin-glass {
+  background: rgba(17, 20, 26, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+:root[data-theme="light"] .admin-glass {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(24, 24, 27, 0.1);
+}
+
+.theme-page {
+  background: var(--background);
+  color: var(--foreground);
+  flex-grow: 1;
+}
+
+.theme-surface {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.theme-surface-strong {
+  background: var(--surface-strong);
+  border-color: var(--line);
+}
+
+.theme-border {
+  border-color: var(--line);
+}
+
+.theme-subtle {
+  color: var(--subtle);
+}
+
+.theme-header {
+  background: var(--header);
+  border-color: var(--line);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.theme-banner {
+  background-color: var(--banner-bg);
+  border-color: var(--banner-border);
+  color: var(--banner-text);
+}
+
+.theme-banner-overlay {
+  background-image: linear-gradient(to right, var(--banner-overlay-from), var(--banner-overlay-via), var(--banner-overlay-to));
+}
+
+.theme-banner-glow {
+  background-image: radial-gradient(circle at center, var(--banner-glow), transparent 60%);
+}
+
+.theme-banner-text-subtle {
+  color: var(--banner-text-subtle);
+}
+
+.theme-banner-img {
+  opacity: var(--banner-img-opacity);
+  transition: all 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .theme-banner-img {
+  opacity: var(--banner-img-hover-opacity);
+  transform: scale(1.05);
+}
+
+.forced-dark {
+  --background: #0b1016;
+  --foreground: #ffffff;
+  --line: rgba(255, 255, 255, 0.1);
+  --subtle: #a1a1aa;
+}
+
+/* Prevent auto-zoom on mobile inputs, selects, and textareas */
+@media (max-w: 640px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+
